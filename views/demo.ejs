@@ -16,14 +16,80 @@
     </script>
 
     <style>
+
         h2{
-            color: red;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            font-weight: 100;
+
+        
+        }
+        input{
+            height: 30px;
+            width: 250px;
+            text-align: center;
+            color: black;
+            border: 1px solid black;
+            background-color: azure;
+            justify-content: center;
+            
+        }
+        label{
+            color: black;
             font-family: sans-serif;
+            font-size: 20px;
+            align-items: center;
+        }
+        #contactForm{
+            background-color: rgb(244, 244, 96);
+            padding-bottom: 50px;
+            padding-top: 20px;
+            border-radius: 10px;
+            width: 45%;
+            margin: 30px;
+        }
+        h3{
+            font-size: 30px;
+        }
+        form{
+            font-size: 18px;
+
+        }
+        button{
+            height: 30px;
+            width: 200px;
+            border: 1px solid rgb(222, 222, 222);
+            background-color:floralwhite;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+        th{
+            font-family: sans-serif;
+            font-size: 20px;
+            font-weight: 100;
+            color: gray;
+            padding: 10px;
+        }
+        td{
+            font-family: sans-serif;
+            font-weight: 100;
+            color: black;
+            padding: 10px;
+        }
+        table{
+            background-color:rgb(236, 234, 234);
+            padding: 50px;
+        }
+        button:hover{
+        background-color: none;
+        transition-duration: 1s;
+        box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
         
         }
     </style>
 </head>
-<body>
+<body><center>
 
     <h2>Contact List</h2>
 
@@ -48,7 +114,7 @@
     </div>
 
     <h2>Stored Contacts</h2>
-    <table border="1">
+    <table>
         <tr>
             <th>S.No</th>
             <th>Name</th>
@@ -64,6 +130,8 @@
             </tr>
         <% }); %>
     </table>
+
+    </center>
 
 </body>
 </html>
